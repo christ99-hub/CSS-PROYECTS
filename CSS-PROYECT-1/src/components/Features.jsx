@@ -8,16 +8,16 @@ const Features = () => {
 
   return (
     <section className="features" id="features">
-      <h2>Características destacadas</h2>
-      <div className="features-grid">
-        {features.map((feature) => (
-          <div key={feature.id} className="feature-card">
-            <div className="feature-icon">{feature.icon}</div>
-            <h3>{feature.title}</h3>
-          </div>
-        ))}
-      </div>
-    </section>
+  <h2>Características destacadas</h2>
+  <ul className="features-grid">
+    {features.map((feature) => (
+      <li key={feature.id} className="feature-card">
+        <div className="feature-icon">{feature.icon}</div>
+        <h3>{feature.title}</h3>
+      </li>
+    ))}
+  </ul>
+</section>
   );
 };
 
