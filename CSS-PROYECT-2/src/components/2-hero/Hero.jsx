@@ -1,13 +1,14 @@
-import React from 'react';
-
 const Hero = () => {
   return (
     <section id="hero" className="hero-section">
       <div className="hero-content">
         <div className="hero-text">
-          <h1 className="hero-headline fade-in">Transforma tu negocio con innovación</h1>
+          <h1 className="hero-headline fade-in">
+            Transforma tu negocio con innovación
+          </h1>
           <p className="broad-script fade-in">
-            Descubre soluciones únicas que impulsan tu éxito en el mundo digital.
+            Descubre soluciones únicas que impulsan tu éxito en el mundo
+            digital.
           </p>
           <p className="brand-tagline fade-in">Innovación a tu alcance</p>
           <button className="cta-button fade-in">Descubre más</button>

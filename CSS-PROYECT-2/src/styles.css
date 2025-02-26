@@ -1,10 +1,10 @@
 /* Estilos renovados: Paleta vibrante y moderna */
 :root {
-  --primary: #3498db;         /* Azul vibrante */
-  --secondary: #2ecc71;       /* Verde fresco */
-  --accent: #e74c3c;          /* Rojo dinámico */
-  --dark: #2c3e50;            /* Azul oscuro */
-  --light: #ecf0f1;           /* Gris claro */
+  --primary: #3498db; /* Azul vibrante */
+  --secondary: #2ecc71; /* Verde fresco */
+  --accent: #e74c3c; /* Rojo dinámico */
+  --dark: #2c3e50; /* Azul oscuro */
+  --light: #ecf0f1; /* Gris claro */
   --gradient-1: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
   --gradient-2: linear-gradient(45deg, #e74c3c 0%, #ff6b6b 100%);
   --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.15);
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
   color: var(--dark);
   background-color: var(--light);
@@ -84,7 +84,7 @@ img {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -115,19 +115,27 @@ img {
 }
 
 .hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   animation: pulse 10s infinite linear;
 }
 
 @keyframes pulse {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hero-content {
@@ -196,13 +204,18 @@ img {
 }
 
 .cta-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.25), transparent);
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
   transition: var(--transition);
 }
 
@@ -229,7 +242,6 @@ img {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
-
 
 .pain-section-p {
   margin: 40px 0;
@@ -286,7 +298,7 @@ img {
   gap: 4rem;
   align-items: center;
 }
-.section-title-howhelp{
+.section-title-howhelp {
   font-size: 3.5rem;
   color: #fff;
   line-height: 1.2;
@@ -323,7 +335,7 @@ img {
 }
 
 .ga-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -359,7 +371,7 @@ img {
 }
 
 .services-heading::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1rem;
   left: 50%;
@@ -409,7 +421,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -482,7 +498,7 @@ img {
 
 .feature-list li {
   padding: 1.25rem;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
   transition: var(--transition);
 }
@@ -498,7 +514,7 @@ img {
   background: linear-gradient(to right, #ccc, var(--accent), #ccc);
   margin: 2rem 0;
 }
-.explore-button{
+.explore-button {
   display: inline-flex;
   align-items: center;
   padding: 1.25rem 2.5rem;
@@ -513,17 +529,21 @@ img {
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
-
 }
 
 .explore-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.25), transparent);
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
   transition: var(--transition);
 }
 
@@ -562,15 +582,15 @@ img {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .nav-links {
     display: none;
   }
-  
+
   .cta-button {
     margin: 0 auto;
   }
-  
+
   .detail-card {
     width: 80%;
   }
@@ -580,11 +600,11 @@ img {
   .hero-headline {
     font-size: 3rem;
   }
-  
+
   .pain-list li {
     padding: 1.5rem;
   }
-  
+
   .services-heading {
     font-size: 2rem;
   }

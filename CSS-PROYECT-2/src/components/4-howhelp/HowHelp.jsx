@@ -1,5 +1,3 @@
-import React from 'react';
-
 const HowHelp = () => {
   return (
     <section id="howhelp" className="help-section">
@@ -10,15 +8,21 @@ const HowHelp = () => {
           className="help-image fade-in"
         />
         <div>
-          <h2 className="section-title-howhelp fade-in">Cómo Podemos Ayudarte</h2>
+          <h2 className="section-title-howhelp fade-in">
+            Cómo Podemos Ayudarte
+          </h2>
           <div className="ga-elements">
             <div className="ga-item fade-in">
               <h3>Consultoría Estratégica</h3>
-              <p>Te asesoramos para optimizar procesos y crecer en el mercado.</p>
+              <p>
+                Te asesoramos para optimizar procesos y crecer en el mercado.
+              </p>
             </div>
             <div className="ga-item fade-in">
               <h3>Desarrollo Tecnológico</h3>
-              <p>Implementamos soluciones digitales a medida para tu negocio.</p>
+              <p>
+                Implementamos soluciones digitales a medida para tu negocio.
+              </p>
             </div>
           </div>
         </div>
