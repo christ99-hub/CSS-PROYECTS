@@ -26,7 +26,7 @@ const ServiceDetails = () => {
   ];
 
   return (
-    <section className="service-details">
+    <section className="service-details" id='serviceDetails'>
       <h2 className="service-header fade-in">Nuestros Servicios en Detalle</h2>
       <div className="details-container">
         {serviceDetails.map((detail) => (

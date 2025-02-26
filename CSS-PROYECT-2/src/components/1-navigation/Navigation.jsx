@@ -19,6 +19,9 @@ const Navigation = () => {
           <Link to="services" smooth={true} className="nav-link">
             Servicios
           </Link>
+          <Link to="serviceDetails" smooth={true} className="nav-link">
+            Detalles
+          </Link>
         </div>
       </div>
     </nav>
