@@ -7,13 +7,11 @@ const PainPoints = () => {
         obstáculos y aprovechar oportunidades para crecer.
       </p>
       <div className="pain-content">
-        <div className="pain-text fade-in">
-          <ul className="pain-list">
-            <li>Falta de visibilidad en el mercado</li>
-            <li>Ineficiencia en procesos internos</li>
-            <li>Dificultad para adaptarse a nuevas tecnologías</li>
-          </ul>
-        </div>
+        <ul className="pain-list fade-in">
+          <li>Falta de visibilidad en el mercado</li>
+          <li>Ineficiencia en procesos internos</li>
+          <li>Dificultad para adaptarse a nuevas tecnologías</li>
+        </ul>
       </div>
       <button className="cta-button pain-button fade-in">
         Ver casos de éxito

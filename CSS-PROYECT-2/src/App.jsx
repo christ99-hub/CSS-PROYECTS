@@ -12,13 +12,13 @@ const App = () => {
       <Navigation />
       <main>
         <Hero />
-        <div className="divider"></div>
+
         <PainPoints />
-        <div className="divider"></div>
+
         <HowHelp />
-        <div className="divider"></div>
+
         <Services />
-        <div className="divider"></div>
+
         <ServiceDetails />
       </main>
     </div>
