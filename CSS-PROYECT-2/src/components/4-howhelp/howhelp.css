@@ -1,0 +1,58 @@
+/* Sección How Help */
+.help-section {
+    padding: 6rem 2rem;
+    background: var(--gradient-1);
+    color: #fff;
+  }
+  
+  .help-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .help-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    transform: perspective(1000px) rotateY(10deg);
+    transition: var(--transition);
+  }
+  
+  .ga-elements {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .ga-item {
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    position: relative;
+    color: var(--dark);
+    overflow: hidden;
+  }
+  
+  .ga-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent);
+    transition: var(--transition);
+    border-radius: 24px;
+  }
+  
+  .ga-item:hover::before {
+    width: 100%;
+    opacity: 0.1;
+  }

@@ -23,9 +23,9 @@ const Services = () => {
   return (
     <section className="services-section" id="services">
       <h2 className="services-heading fade-in">Nuestros Servicios</h2>
-      <div className="services-grid">
+      <ul className="services-grid">
         {services.map((service) => (
-          <div key={service.id} className="service-card fade-in">
+          <li key={service.id} className="service-card fade-in">
             <img
               src={service.image}
               alt={service.title}
@@ -34,9 +34,9 @@ const Services = () => {
             <div className="service-overlay">
               <h3>{service.title}</h3>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

@@ -1,0 +1,65 @@
+/* Sección Pain Points */
+.pain-section {
+    padding: 6rem 2rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pain-section-p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: var(--dark);
+    line-height: 1.5;
+  }
+  
+  .pain-content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .pain-list {
+    list-style: none;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+  }
+  
+  .pain-list li {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 16px;
+    border-left: 4px solid var(--accent);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .pain-button {
+    margin-top: 30px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    background: var(--gradient-2);
+    color: #fff;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-md);
+  }
