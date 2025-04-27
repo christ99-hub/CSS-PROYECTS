@@ -1,0 +1,198 @@
+.timeline  {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+    align-items: center;
+    background-image: 
+    radial-gradient(circle 1000px at 65% 15%, rgba(194, 78, 84, 0.5) 25%, rgba(63, 155, 172, 0.8) , white 135%),
+    url("../lija.png");
+    ;
+    filter: blur(0.5px);
+    background-color: white;
+    /* filter: brightness(100%); */
+    background-blend-mode: normal;
+    background-size: cover;
+    padding: 100px 50PX 100PX 50PX;
+    margin: 0 ;
+  }
+  .title{
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    color: rgb(260, 260, 260);
+    filter: brightness(200%);
+    font-size: 2.1rem;
+    
+  }
+  .timeline-year{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 0;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+
+  }
+  
+  .span1{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    font-size: 4rem;
+    color: white;
+    justify-self: center;
+    align-self: center;
+    border-bottom: 2px solid rgb(260, 260, 260);
+    padding-bottom: 1px;
+    border-radius: 1px;
+    margin-left: 50px;
+  }
+
+  
+  .span2{
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+    font-size: 4rem;
+    color: white;
+    justify-self: center;
+    align-self: center;
+    border-bottom: 2px solid  rgb(260, 260, 260);
+    padding-bottom: 1px;
+    border-radius: 1px;
+  
+  }
+
+.p1_timeline{
+    padding-top: 15px;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    font-size: 1em;
+    justify-self: center;
+    align-self: flex-start;
+    color: #ffffff;
+    padding: 15px 0 0 0 ;
+   
+    
+}
+
+.p2_timeline{
+    padding: 15px 0 0 0 ;
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+    font-size: 1em;
+    justify-self: center;
+    align-self: flex-start;
+    color: white;
+   
+}
+
+
+  /* Tablet: 768px y menor */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    padding: 60px 30px;
+    background-image: 
+      radial-gradient(circle 800px at 50% 15%, rgba(194, 78, 84, 0.5) 25%, rgba(63, 155, 172, 0.8), white 135%),
+      url("../lija.png");
+  }
+  
+  .title {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .timeline-year {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .span1, .span2 {
+    font-size: 3rem;
+    margin-left: 0;
+    padding-bottom: 5px;
+  }
+  
+  .p1_timeline, .p2_timeline {
+    font-size: 0.9em;
+    padding-top: 10px;
+  }
+}
+
+/* Mobile: 480px y menor */
+@media (max-width: 480px) {
+  .timeline {
+    padding: 40px 20px;
+    background-image: 
+      radial-gradient(circle 600px at 50% 10%, rgba(194, 78, 84, 0.5) 25%, rgba(63, 155, 172, 0.8), white 135%),
+      url("../lija.png");
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .timeline-year {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  
+  .span1, .span2 {
+    grid-column: 1;
+    font-size: 2.5rem;
+    border-bottom: none;
+    padding: 10px 0;
+  }
+  
+  .span1 { grid-row: 1; }
+  .p1_timeline {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+  
+  .span2 { grid-row: 3; }
+  .p2_timeline {
+    grid-row: 4;
+    grid-column: 1;
+    text-align: center;
+  }
+  
+  .p1_timeline, .p2_timeline {
+    font-size: 0.85em;
+    padding: 15px 10px;
+  }
+}
+
+/* Estilos base para elementos específicos */
+.title {
+  width: 50%;
+  font-size: 2.1rem;
+  color: #fff;
+}
+
+.timeline-year {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.span1, .span2 {
+  font-size: 4rem;
+  border-bottom: 2px solid #fff;
+}
+
+.p1_timeline, .p2_timeline {
+  font-size: 1em;
+  color: #fff;
+}
+  

@@ -1,0 +1,255 @@
+.hero {
+  position: relative;
+  height: 100vh;            /* ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  overflow: hidden;         /* oculta lo que sobresalga */
+
+  /* Fondos superpuestos */
+  background-image:
+    radial-gradient(circle 800px at 70% 2%, rgba(38, 86, 216, 0.8), rgba(208, 208, 233, 0.37) 70%),
+    radial-gradient(circle 900px at 35% 90%, rgba(38, 86, 216, 1), rgba(208, 208, 233, 0.37) 70%),
+     url('../whitegranulado.png') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-blend-mode: overlay; */
+  color: #000;
+  text-align: left;
+}
+.hero-circle {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;   /* para que no interfiera con clicks */
+}
+.circle-label {
+  top: 15%;
+  left:60%;
+  position: absolute;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  pointer-events: none;
+}
+
+.line{
+  height: 500px;
+  width: 1px;
+  background-color: white;
+  transform: translate(-20px, 5px) rotate(45deg); 
+}
+.circle-label.project { transform: translate(-155px, -60px) rotate(-45deg); }
+.circle-label.aboutt   { transform: translate( -30px, 115px) rotate(-45deg); }
+
+.circle-play {
+  top: 40%;
+  left: 95%;
+  position: absolute;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  pointer-events: auto;    /* este sí recibe clicks */
+}
+
+
+
+
+.hero::before{
+  width: 1000px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: black;
+  border-color: 2px solid black;
+  left: 50%;
+  top: 20%;
+}
+
+.hero h1 {
+
+  align-self: center;
+  font-size: 18rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: -5px;
+}
+
+.herotext {
+  align-self: flex-end;
+  justify-content: flex-end;
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0;
+}
+
+.subscribe {
+  position: relative;
+  align-self: flex-end;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 40px 40px 40px 40px;
+  width: 490px;
+  height: 60px;
+  
+}
+.subscribe:active{
+  border-color: black;
+  transition: ease 0.1s;
+
+}
+
+
+.subscribe input {
+  padding: 15px;
+  width: 400px;
+  border: 1px solid white;
+  border-radius: 30px 0 0 30px;
+  font-size: 1rem;
+  outline: none;  /* 🔹 Elimina el borde azul al hacer clic */
+}
+
+
+.subscribe button {
+  margin-right: 1px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.1s ease;
+}
+.subscribe button:hover{
+  transform: translateX(2px);
+  box-shadow: 1px 1px 5px rgba(0, 0 , 0 , 0.5);
+}
+
+/* Tablet: 768px y menor */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 3%;
+    background-image:
+      radial-gradient(circle 400px at 70% 2%, rgba(38, 86, 216, 0.8), rgba(208, 208, 233, 0.37) 70%),
+      radial-gradient(circle 500px at 35% 90%, rgba(38, 86, 216, 1), rgba(208, 208, 233, 0.37) 70%),
+       url('../whitegranulado.png');
+  }
+  
+  .hero h1 {
+    font-size: 12rem;
+    letter-spacing: -3px;
+  }
+  
+  .hero-circle {
+    width: 250px;
+    height: 250px;
+    left: 25%;
+  }
+  
+  .circle-label {
+    font-size: 0.9rem;
+  }
+  
+  .subscribe {
+    width: 100%;
+    max-width: 490px;
+  }
+  
+  .subscribe input {
+    width: 75%;
+  }
+}
+
+/* Mobile: 480px y menor */
+@media (max-width: 480px) {
+  .hero {
+    height: 90vh;
+    padding: 0 5%;
+    background-image:
+      radial-gradient(circle 300px at 70% 2%, rgba(38, 86, 216, 0.8), rgba(208, 208, 233, 0.37) 70%),
+      radial-gradient(circle 350px at 35% 90%, rgba(38, 86, 216, 1), rgba(208, 208, 233, 0.37) 70%),
+       url('../whitegranulado.png');
+  }
+  
+  .hero h1 {
+    font-size: 6rem;
+    letter-spacing: -1px;
+    align-self: flex-start;
+  }
+  
+  .hero-circle {
+    display: none; /* Ocultar elementos complejos en mobile */
+  }
+  
+  .circle-label {
+    display: none;
+  }
+  
+  .line {
+    height: 300px;
+  }
+  
+  .herotext {
+    align-self: flex-start;
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+  
+  .subscribe {
+    height: 50px;
+    width: 100%;
+  }
+  
+  .subscribe input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .subscribe button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .circle-play {
+    left: 85%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Pantallas muy grandes (ajustes opcionales) */
+@media (min-width: 1600px) {
+  .hero {
+    padding: 0 10%;
+  }
+  
+  .herotext {
+    max-width: 600px;
+    font-size: 1.1rem;
+  }
+}

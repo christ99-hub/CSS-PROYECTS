@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  box-shadow: inset;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(81, 152, 245);
+    overflow-x: hidden; /* Previene scroll horizontal */
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3 {
+    text-transform: uppercase;
+    margin: 0.5em 0;
+  }
+  
+  section {
+    padding: 40px;
+  }
+  /* Tablet: 768px y menor */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.4rem; }
+  
+  section {
+    padding: 30px;
+  }
+}
+
+/* Mobile: 480px y menor */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+  
+  section {
+    padding: 20px;
+  }
+}
+
+/* Ajustes para pantallas grandes (opcional) */
+@media (min-width: 1600px) {
+  section {
+    padding: 40px 15%;
+  }
+}
