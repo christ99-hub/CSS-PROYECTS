@@ -1,0 +1,323 @@
+.HowWorks{
+    position: relative;
+    margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-bottom: 50px;
+}
+
+.HowWorks-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HowWorks-info h1{
+    font-size: 4.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    font-style: oblique;
+}
+
+.HowWorks-info p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    font-family:  sans-serif;
+    text-align: center;
+}
+
+
+.HowWorks-imgs{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    margin-top: 50px;
+    padding: 0;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+  
+   
+    
+}
+
+.HowWorks-imgs::before {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    content: "";
+    width: 4px;
+    height: 950px;
+    background: repeating-linear-gradient(
+        to bottom,
+        blue 0px,
+        blue 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    transform: translateX(-50%);
+}
+
+
+.HowWorks-imgs::after {
+    position: absolute;
+    content: '✏️';
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: white;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+/* Segundo círculo */
+.HowWorks-imgs span::after {
+    position: absolute;
+    content: '📰';
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: white;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.HowWorks-imgs span::before {
+    position: absolute;
+    content: '💰';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.HowWorks-img1{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 380px;
+   height: 380px;
+   border-radius: 50px;
+    background-color: white;
+   margin-right: 200px;
+  
+}
+
+.HowWorks-img1 img{
+    object-fit: cover;
+    width: 350px;
+    height: 300;
+    border-radius: 50px;
+}
+.HowWorks-img1 h2{
+    margin: 10px;
+    padding: 0;
+   padding-top: 10px;
+}
+.HowWorks-img1 span{
+    margin: 0;
+    padding: 0 20px 0 20px;
+}
+
+
+
+
+
+
+
+
+
+.HowWorks-img2{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 380px;
+   height: 380px;
+   border-radius: 50px;
+    background-color: white;
+    z-index: 90;
+}
+
+.HowWorks-img2 img{
+    object-fit: cover;
+    width: 350px;
+    height: 300;
+    border-radius: 50px;
+}
+.HowWorks-img2 h2{
+    margin: 10px;
+    padding: 0;
+    padding-top: 10px;
+}
+.HowWorks-img2 span{
+    margin: 0;
+    padding: 0 20px 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.HowWorks-img3{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    width: 380px;
+   height: 380px;
+   border-radius: 50px;
+    background-color: white;
+}
+
+.HowWorks-img3 img{
+    object-fit: cover;
+    width: 350px;
+    height: 300;
+    border-radius: 50px;
+}
+.HowWorks-img3 h2{
+    margin: 10px;
+    padding: 0;
+    padding-top: 10px;
+}
+.HowWorks-img3 span{
+    margin: 0;
+    padding: 0 20px 0 20px;
+}
+
+
+.line{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+
+
+.HowWorks-imgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.HowWorks-imgs::before{
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    content: "";
+    width: 4px;
+    height: 950px;
+    background: repeating-linear-gradient(
+        to bottom,
+        blue 0px,
+        blue 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    transform: translateX(-50%);
+
+}
+
+.HowWorks-imgs::after {
+    position: absolute;
+    content: '✏️';
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: white;
+    top: 35%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+/* Segundo círculo */
+.HowWorks-imgs span::after {
+    position: absolute;
+    content: '📰';
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: white;
+    top: 65%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.HowWorks-imgs span::before {
+    position: absolute;
+    content: '💰';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    top: 93%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.HowWorks-img1{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+}

@@ -1,0 +1,131 @@
+.Explore{
+    background-color: white;
+    width: 100vw;
+  
+  
+}
+.Explore-container{
+    width: 95%;
+    margin-top: 100px;
+}
+
+
+.ExploreGrid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ExploreGrid h1{
+    font-size: 4.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 40%;
+}
+
+.ExploreGrid h1 span{
+    font-size: 4.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: blue;
+    font-style: oblique;
+    padding: 0;
+    margin: 0;
+}
+
+.ExploreGrid p{
+    width: 400px;
+}
+
+.ExploreGrid button{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 50%;
+    border: none;
+    color: whitesmoke;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.ExploreGrid button:hover{
+    background-color: rgb(24, 24, 156);
+}
+
+.ExploreGrid button::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height:16px;
+    border-radius: 60px;
+    background-color: white;
+    top: 29%;
+    left: 50%;
+    z-index: 1;
+    transform: rotate(-50deg)
+   
+}
+
+.ExploreGrid button::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height:16px;
+    border-radius: 60px;
+    background-color: white;
+    top: 45%;
+    left: 50%;
+    z-index: 1;
+    transform: rotate(50deg)
+   
+}
+
+
+
+
+
+
+
+
+.Explore-carrousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.cards-wrapper {
+  display: flex;
+}
+
+.card-item {
+  /* Cada tarjeta ocupa un tercio del ancho total */
+  flex: 0 0 calc(100% / 3);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .Explore-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+.ExploreGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.ExploreGrid h1{
+    width: auto;
+}
+
+}

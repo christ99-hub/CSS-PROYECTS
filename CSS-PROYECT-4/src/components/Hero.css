@@ -1,0 +1,1159 @@
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+   
+}
+
+
+.hero{
+    border-radius: 25px;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   background-color: whitesmoke;
+  /*  border-radius: 50px 50px 0 0; */
+    height: 100%;
+     
+}
+
+/* estilos del header */
+.header-container{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+   background-color: transparent;
+    background-color: rgb(245, 245, 245,0.3);
+   backdrop-filter: blur(4px);
+    box-shadow: 1px 1px 10px;
+  margin: 0;
+  padding: 0;
+}
+.header-margin{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 95%;
+    padding-top: 25px;
+   background-color: rgb(245, 245, 245,0);
+   
+   margin-bottom: 25px;
+   
+   
+}
+
+.header-globe{
+    position: relative;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    justify-self: center;
+}
+
+.header-globe::after{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 20px solid blue;
+   
+}
+
+
+
+nav{
+   display: flex;
+   gap: 15px;
+   
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-out;
+    font-weight: 500;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: blue;
+}
+
+
+
+.header-container button{
+    background-color: blue;
+    width: 160px;
+    height: 40px;
+    border-radius: 50px;
+    border: solid 0px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.header-container button:hover{
+    background-color: rgb(23, 23, 194);
+}
+
+.hero-grid{
+    display: grid;
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 50px;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* parte izquieda del hero */
+.hero-left{
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+    grid-column: 1 / span 1;
+    text-align: start;
+}
+.hero-left span{
+    color: blue;
+}
+
+.hero-left h1{
+    font-size: 4.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    margin-top: 5px;
+    
+}
+
+.hero-left button{
+    background-color: blue;
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    border: solid 0px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+.hero-left button:hover{
+    background-color: rgb(23, 23, 194);
+}
+
+.hero-left a{
+    position: relative;
+    top: -35px;
+    right: -200px;
+    color: blue;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+    
+}
+
+.hero-left a:hover{
+    color: rgb(23, 23, 194);
+}
+
+.hero-left p{
+    margin-top: 2px;
+     margin-bottom:5px;
+    }
+
+
+/* parte derecha del hero */
+.hero-right{
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+   margin: 0;
+   padding: 0;
+   grid-column: 2 / span 2;
+}
+
+.hero-right .left{
+    position: absolute;
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.hero-right .left:hover{
+    background-color: rgb(21, 21, 177);
+    transform: translateX(-2px);
+}
+
+.hero-right .left::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height:14px;
+    border-radius: 60px;
+    background-color: white;
+    top: 29%;
+    left: 50%;
+    z-index: 1;
+    transform: rotate(50deg)
+   
+}
+
+.hero-right .left::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height:15px;
+    border-radius: 60px;
+    background-color: white;
+    top: 45%;
+    left: 50%;
+    z-index: 1;
+    transform: rotate(-50deg)
+   
+}
+
+
+
+
+
+
+.hero-right .right{
+    position: absolute;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.hero-right .right:hover{
+    background-color: rgb(21, 21, 177);
+    transform: translateX(2px);
+}
+
+.hero-right .right::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height:14px;
+    border-radius: 60px;
+    background-color: white;
+    top: 29%;
+    left: 50%;
+    z-index: 1;
+    transform: rotate(-50deg)
+   
+}
+
+.hero-right .right::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height:15px;
+    border-radius: 60px;
+    background-color: white;
+    top: 45%;
+    left: 50%;
+    z-index: 1;
+    transform: rotate(50deg)
+   
+}
+
+
+
+
+
+
+
+
+.hero-img {
+    width: 100%;  /* La imagen se adapta al ancho del contenedor */
+    height: 420px; /* Mantiene la proporción */
+    border-radius: 50px; /* Mantiene el borde redondeado */
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+/* Clase para el efecto fade-out */
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
+}
+.tag {
+    position: absolute;
+ /* Ajusta estos valores según dónde quieras que aparezca el globo */
+    bottom: 3%; /* Ejemplo: 10% desde la parte inferior de .hero-right */
+    left: 3%;    /* Ejemplo: 5% desde el borde izquierdo */
+    display: flex;
+    background-color: rgba(216, 211, 211, 0.3); /* Fondo semitransparente */
+    border-radius: 50px;
+    width: 330px;
+    justify-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(4px); /* Efecto borroso en el fondo */
+    gap: 8px;
+    padding: 10px;
+}
+
+
+.tag-texts{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 3px;
+   
+    
+}
+
+.tag-texts p, .tag-texts h5{
+    margin: 0;
+    padding: 0;
+    color: white;
+   
+   
+    
+}
+
+.tag-texts p{
+    font-size: 1rem;
+   }
+
+   .tag-texts h5{
+    font-size: 1.3rem;
+   }
+.tag img{
+    
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+
+
+/* redes sociales y contactos del hero */
+
+.hero-networks{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+   
+    
+}
+
+
+
+.hero-networks h3{
+   font-style: oblique;
+   font-size: 1.6rem;
+   color: blue;
+    width: 140px;
+    
+    
+}
+
+
+
+.btn-redes {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-redes.cbs { 
+     margin-right: 60px;
+    background-image: url('/logos/cbs-svgrepo-com.svg'); 
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    transition: 0.2S ease-out;
+    cursor: pointer;
+   
+}
+
+.btn-redes.cbs::after{
+    position: relative;
+    content: "CBS";
+    font-size: 2.2rem;
+    color: gray;
+    right: -48PX;
+    top: 2PX;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.btn-redes.usa{
+     margin-right: 60px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    color: rgb(133, 131, 131);
+    background-color: gray;
+}
+
+.btn-redes.usa::after{
+    position: relative;
+    content: "USA TODAY";
+    font-size: 1.5rem;
+    color: gray;
+    right: -60PX;
+    top: 5PX;
+    font-weight: 700;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.btn-redes.foxnews { 
+     margin-right: 60px;
+    background-image: url('/logos/foxnews.svg'); 
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    transition: 0.2S ease-out;
+    cursor: pointer;
+   
+}
+
+.btn-redes.foxnews::after{
+    position: relative;
+    content: "FOX NEWS";
+    font-size: 1.5rem;
+    color: gray;
+    right: -65PX;
+    top: 10PX;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.btn-redes.spotify { 
+     margin-right: 60px;
+    background-image: url('/logos/spotify.svg'); 
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    transition: 0.2S ease-out;
+    cursor: pointer;
+   
+}
+
+.btn-redes.spotify::after{
+    position: relative;
+    content: "Spotify";
+    font-size: 1.5rem;
+    color: gray;
+    right: -70PX;
+    top: 20PX;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.btn-redes.NBC { 
+     margin-right: 60px;
+    position: relative;
+    background-image: url('/logos/NBC.svg'); 
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    transition: 0.2S ease-out;
+    cursor: pointer;
+   
+}
+
+.btn-redes.NBC::after{
+    position: absolute;
+    content: "NBC";
+    font-size: 1.5rem;
+    color: gray;
+    left: 100%;
+    top: 30%;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/*parrafo intermedio del hero*/
+.hero-paragraph{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  
+   
+    background-color: whitesmoke;
+  
+}
+.hero-paragraph span{
+   color: rgb(206, 127, 216);
+    list-style-type: circle;
+   font-style: oblique;
+}
+.hero-paragraph p{
+    width: 50%;
+    height: auto;
+    font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/*Colored pinkk cardsinfo*/
+
+.hero-pinkcard{
+    
+    display: flex;
+    top: 140% ;
+    width:100vw;
+    z-index: 1;
+    background-color: blueviolet;
+    border-radius: 50px 50px 0 0;
+    justify-content: center;
+    align-items: center;
+   
+}
+.hero-pinkcard-margin{
+    display: grid;
+    gap:120px;
+     grid-template-columns: 50% , 50%;
+   grid-template-rows: auto;
+     width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+     margin-bottom: 80px;
+     padding: 50px 0 50px 0;
+}
+
+/* parte izquierda del grid*/
+.hero-pinkcard-left{
+    grid-column: 1 / span 1;
+  
+    
+}
+
+.hero-pinkcard-left h1{
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    color: white;
+}
+
+
+.hero-pinkcard-left p {
+    color: white;
+}
+
+.hero-pinkcard-left button {
+     background-color: whitesmoke;
+    width: 160px;
+    height: 40px;
+    border-radius: 50px;
+    border: solid 0px;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.hero-pinkcard-left button:hover{
+    background-color: rgb(188, 23, 194);
+}
+
+
+
+
+/*parte derecha del grid*/
+
+.hero-pinkcard-right{
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+   margin: 0;
+   padding: 0;
+    grid-column: 2 / span 2;
+}
+
+.hero-pinkcard-right img{
+    width: 100%;  /* La imagen se adapta al ancho del contenedor */
+   height: 450px;/* Mantiene la proporción */
+    border-radius: 50px; /* Mantiene el borde redondeado */
+    object-fit: cover; 
+    border: 20px solid rgb(255, 255, 255,0.3);
+}
+.hero-pinkcard-right::before{
+    position: absolute;
+     content: "🔥"; /* Usar el emoji directamente */
+    z-index: 5;
+    left: -8%;
+    top: -4%;
+    width: 80px;
+    height: 80px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+   
+}
+
+.globe-pink{
+    position: absolute;
+    bottom:5%;
+    left: -1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 5px;
+    width: 320px;
+    padding: 15px;
+}
+
+.globe-pink h3{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: oblique;
+   font-size: 1.5em;
+   padding: 0;
+   margin: 0;
+}
+
+
+
+/*Colored bluee cardsinfo*/
+
+.hero-bluecard{
+    margin-top: -3rem;
+    display: flex;
+    top: 240% ;
+    width:100vw;
+    z-index: 1;
+    background-color: blue;
+    border-radius: 50px 50px 0 0;
+    justify-content: center;
+    align-items: center;
+   
+}
+.hero-bluecard-margin{
+    display: grid;
+    gap:200px;
+     grid-template-columns: 50% , 50%;
+   grid-template-rows: auto;
+     width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+     margin-bottom: 80px;
+     padding: 50px 0 50px 0;
+}
+
+/* parte izquierda del grid*/
+.hero-bluecard-left{
+    grid-column: 1 / span 1;
+  
+    
+}
+
+.hero-bluecard-left h1{
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    color: white;
+}
+
+
+.hero-bluecard-left p {
+    color: white;
+}
+
+.hero-bluecard-left button {
+     background-color: whitesmoke;
+    width: 160px;
+    height: 40px;
+    border-radius: 50px;
+    border: solid 0px;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.hero-bluecard-left button:hover{
+    background-color: rgb(42, 9, 192);
+}
+
+
+
+
+/*parte derecha del grid*/
+
+.hero-bluecard-right{
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+   margin: 0;
+   padding: 0;
+    grid-column: 2 / span 2;
+}
+
+.hero-bluecard-right img{
+    width: 100%;  /* La imagen se adapta al ancho del contenedor */
+    height: 450px; /* Mantiene la proporción */
+    border-radius: 50px; /* Mantiene el borde redondeado */
+    object-fit: cover; 
+    border: 20px solid rgb(255, 255, 255,0.3);
+}
+.hero-bluecard-right::before{
+    position: absolute;
+     content: "🎤"; /* Usar el emoji directamente */
+    z-index: 5;
+    left: -8%;
+    top: -4%;
+    width: 80px;
+    height: 80px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+   
+}
+
+.globe-blue{
+    position: absolute;
+    bottom:5%;
+    left: -1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 5px;
+    width: 320px;
+    padding: 15px;
+}
+
+.globe-blue h3{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: oblique;
+   font-size: 1.5em;
+   padding: 0;
+   margin: 0;
+}
+
+
+
+
+
+
+/*Colored orange cardsinfo*/
+
+.hero-orange{
+     margin-top: -3rem;
+    position: relative;
+    display: flex;
+    top: 340% ;
+    width:100vw;
+    z-index: 1;
+    background-color: rgb(255, 136, 0);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.hero-orange-margin{
+    display: grid;
+    gap:200px;
+     grid-template-columns: 50% , 50%;
+   grid-template-rows: auto;
+     width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+     margin-bottom: 80px;
+     padding: 50px 0 50px 0;
+}
+
+/* parte izquierda del grid*/
+.hero-orange-left{
+    grid-column: 1 / span 1;
+  
+    
+}
+
+.hero-orange-left h1{
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    color: white;
+}
+
+
+.hero-orange-left p {
+    color: white;
+}
+
+.hero-orange-left button {
+     background-color: whitesmoke;
+    width: 160px;
+    height: 40px;
+    border-radius: 50px;
+    border: solid 0px;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.hero-orange-left button:hover{
+    background-color: rgb(231, 130, 14);
+}
+
+
+
+
+/*parte derecha del grid*/
+
+.hero-orange-right{
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+   margin: 0;
+   padding: 0;
+    grid-column: 2 / span 2;
+}
+
+.hero-orange-right img{
+    width: 100%;  /* La imagen se adapta al ancho del contenedor */
+    height: 450px; /* Mantiene la proporción */
+    border-radius: 50px; /* Mantiene el borde redondeado */
+    object-fit: cover; 
+    border: 20px solid rgb(255, 255, 255,0.3);
+}
+.hero-orange-right::before{
+    position: absolute;
+     content: "📤"; /* Usar el emoji directamente */
+    z-index: 5;
+    left: -8%;
+    top: -4%;
+    width: 80px;
+    height: 80px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+   
+}
+
+.globe-orange{
+    position: absolute;
+    bottom:5%;
+    left: -1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 5px;
+    width: 320px;
+    padding: 15px;
+}
+
+.globe-orange h3{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: oblique;
+   font-size: 1.5em;
+   padding: 0;
+   margin: 0;
+}
+
+@media (max-width: 992px) {
+.hero-grid, .card {
+grid-template-columns: 1fr;
+text-align: center;
+}
+.tag { left: 50%; transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+    .hero{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+.header-container {
+   
+flex-direction: column;
+gap: 1rem;
+}
+
+nav {
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.hero-grid{
+    display: flex;
+    flex-direction: column;
+}
+.hero-right{
+    position: relative;
+}
+.tag{
+    position: absolute;
+    left: 30%;
+}
+
+.hero-networks{
+    display: flex;
+   position: relative;
+   padding: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.hero-networks h3{
+    position: absolute;
+    top: 0%;
+    width: auto;
+   
+}
+
+.btn-redes.cbs::after{
+   font-size: 1em;
+}
+.btn-redes.usa::after{
+   font-size: 1em;
+   line-height: 5px;
+}
+.btn-redes.foxnews::after{
+   font-size: 1em;
+}
+.btn-redes.spotify::after{
+   font-size: 1em;
+}
+.btn-redes.NBC::after{
+   font-size: 1em;
+}
+/******************************************/
+.hero-pinkcard{
+    display: flex;
+    flex-direction: column;
+}
+.hero-pinkcard-margin{
+    display: flex;
+    flex-direction: column;
+}
+.hero-pinkcard-left{
+    display: flex;
+    flex-direction: column;
+}
+.hero-pinkcard-left button{
+    align-self: center;
+}
+
+.hero-pinkcard-right{
+    position: relative;
+}
+.hero-pinkcard-right img{
+    position: relative;
+   object-fit: cover;
+   overflow: hidden;
+   width: 650px;
+  
+}
+.hero-pinkcard-right::before{
+     position: absolute;
+     content: "🔥"; /* Usar el emoji directamente */
+    z-index: 5;
+    left: 0%;
+    top: 1%;
+    width: 50px;
+    height: 50px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+.globe-pink{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+
+/******************************************/
+.hero-bluecard{
+    display: flex;
+    flex-direction: column;
+}
+.hero-bluecard-margin{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.hero-bluecard-left{
+    display: flex;
+    flex-direction: column;
+}
+.hero-bluecard-left button{
+    align-self: center;
+}
+
+.hero-bluecard-right{
+    position: relative;
+}
+.hero-bluecard-right img{
+    position: relative;
+   object-fit: cover;
+   overflow: hidden;
+   width: 650px;
+}
+.hero-bluecard-right::before{
+     position: absolute;
+     content: "🎤"; /* Usar el emoji directamente */
+    z-index: 5;
+    left: 0%;
+    top: 1%;
+    width: 50px;
+    height: 50px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+.globe-blue{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+
+/******************************************/
+.hero-orange{
+    display: flex;
+    flex-direction: column;
+}
+.hero-orange-margin{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.hero-orange-left{
+    display: flex;
+    flex-direction: column;
+}
+.hero-orange-left button{
+    align-self: center;
+}
+
+.hero-orange-right{
+    
+    position: relative;
+}
+.hero-orange-right img{
+    position: relative;
+   object-fit: cover;
+   overflow: hidden;
+   width: 650px;
+}
+.hero-orange-right::before{
+     position: absolute;
+     content: "📤"; /* Usar el emoji directamente */
+    z-index: 5;
+    left: 0%;
+    top: 1%;
+    width: 50px;
+    height: 50px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+.globe-orange{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+}
+
+
+
+
+@media (max-width: 480px) {
+.hero-left h1 { font-size: 2rem; }
+.header-container > button, .hero-left button {
+width: 100%;
+}
+}
