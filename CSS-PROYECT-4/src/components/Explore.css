@@ -1,6 +1,6 @@
 .Explore{
     background-color: white;
-    width: 100vw;
+    width: 100%;
   
   
 }
@@ -126,6 +126,13 @@
 }
 .ExploreGrid h1{
     width: auto;
+}
+
+.card-item {
+  /* Cada tarjeta ocupa un tercio del ancho total */
+  flex: 0 0  calc(100% / 2);
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 }

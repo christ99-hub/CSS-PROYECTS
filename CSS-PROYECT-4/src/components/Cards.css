@@ -47,3 +47,57 @@
     margin: 0;
     padding: 0;
 }
+
+
+@media (max-width: 768px) {
+
+    .Card-container{
+    position: relative;
+    width: 45vw;
+    height:450px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+.Card-container img{
+    position: relative;
+    object-fit: cover;
+    width: 45vw;
+    height: auto;
+    border-radius: 50px;
+}
+   .tag-card{
+    position: absolute;
+    bottom: 5%;
+    background-color: white;
+    border-radius: 30px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 5px;
+    padding-left: 20px;
+    padding-top: 15px;
+    
+}
+
+
+.tag-card h3{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.tag-card p{
+    
+    margin-top: 10px;
+    padding: 0;
+}
+.tag-card h2{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+}

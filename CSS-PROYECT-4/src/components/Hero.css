@@ -205,7 +205,7 @@ nav a:hover{
    align-items: flex-end;
    margin: 0;
    padding: 0;
-   grid-column: 2 / span 2;
+   grid-column: 2 ;
 }
 
 .hero-right .left{
@@ -331,7 +331,7 @@ nav a:hover{
     bottom: 3%; /* Ejemplo: 10% desde la parte inferior de .hero-right */
     left: 3%;    /* Ejemplo: 5% desde el borde izquierdo */
     display: flex;
-    background-color: rgba(216, 211, 211, 0.3); /* Fondo semitransparente */
+    background-color: rgba(12, 11, 11, 0.548); /* Fondo semitransparente */
     border-radius: 50px;
     width: 330px;
     justify-content: flex-start;
@@ -408,7 +408,7 @@ nav a:hover{
     background-position: center;
 }
 .btn-redes.cbs { 
-     margin-right: 60px;
+     margin-right: 35px;
     background-image: url('/logos/cbs-svgrepo-com.svg'); 
     object-fit: cover;
     width: 50px;
@@ -421,7 +421,7 @@ nav a:hover{
 .btn-redes.cbs::after{
     position: relative;
     content: "CBS";
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     color: gray;
     right: -48PX;
     top: 2PX;
@@ -430,7 +430,7 @@ nav a:hover{
 
 }
 .btn-redes.usa{
-     margin-right: 60px;
+     margin-right: 80px;
     cursor: pointer;
     width: 60px;
     height: 60px;
@@ -454,7 +454,7 @@ nav a:hover{
 
 
 .btn-redes.foxnews { 
-     margin-right: 60px;
+     margin-right: 55px;
     background-image: url('/logos/foxnews.svg'); 
     object-fit: cover;
     width: 70px;
@@ -478,7 +478,7 @@ nav a:hover{
 
 
 .btn-redes.spotify { 
-     margin-right: 60px;
+     margin-right: 70px;
     background-image: url('/logos/spotify.svg'); 
     object-fit: cover;
     width: 70px;
@@ -493,7 +493,7 @@ nav a:hover{
     content: "Spotify";
     font-size: 1.5rem;
     color: gray;
-    right: -70PX;
+    right: -61PX;
     top: 20PX;
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -531,7 +531,9 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: auto;
+     margin-top: 80px;
+    margin-bottom: 80px;
   
    
     background-color: whitesmoke;
@@ -556,7 +558,7 @@ nav a:hover{
     
     display: flex;
     top: 140% ;
-    width:100vw;
+    width:100%;
     z-index: 1;
     background-color: blueviolet;
     border-radius: 50px 50px 0 0;
@@ -567,7 +569,7 @@ nav a:hover{
 .hero-pinkcard-margin{
     display: grid;
     gap:120px;
-     grid-template-columns: 50% , 50%;
+     grid-template-columns: 1fr  1fr;
    grid-template-rows: auto;
      width: 95%;
     align-items: center;
@@ -625,7 +627,7 @@ nav a:hover{
    align-items: flex-end;
    margin: 0;
    padding: 0;
-    grid-column: 2 / span 2;
+    grid-column: 2 ;
 }
 
 .hero-pinkcard-right img{
@@ -683,7 +685,7 @@ nav a:hover{
     margin-top: -3rem;
     display: flex;
     top: 240% ;
-    width:100vw;
+    width:100%;
     z-index: 1;
     background-color: blue;
     border-radius: 50px 50px 0 0;
@@ -694,7 +696,7 @@ nav a:hover{
 .hero-bluecard-margin{
     display: grid;
     gap:200px;
-     grid-template-columns: 50% , 50%;
+     grid-template-columns: 1fr  1fr;
    grid-template-rows: auto;
      width: 95%;
     align-items: center;
@@ -752,7 +754,7 @@ nav a:hover{
    align-items: flex-end;
    margin: 0;
    padding: 0;
-    grid-column: 2 / span 2;
+    grid-column: 2 ;
 }
 
 .hero-bluecard-right img{
@@ -802,19 +804,13 @@ nav a:hover{
    margin: 0;
 }
 
-
-
-
-
-
-/*Colored orange cardsinfo*/
+/*Colored orangee cardsinfo*/
 
 .hero-orange{
      margin-top: -3rem;
     position: relative;
     display: flex;
-    top: 340% ;
-    width:100vw;
+    width:100%;
     z-index: 1;
     background-color: rgb(255, 136, 0);
     border-radius: 50px;
@@ -823,9 +819,9 @@ nav a:hover{
    
 }
 .hero-orange-margin{
-    display: grid;
+   display: grid;
     gap:200px;
-     grid-template-columns: 50% , 50%;
+     grid-template-columns: 1fr 1fr;
    grid-template-rows: auto;
      width: 95%;
     align-items: center;
@@ -843,7 +839,7 @@ nav a:hover{
 }
 
 .hero-orange-left h1{
-    font-size: 4rem;
+   font-size: 4rem;
     margin-top: 20px;
     margin-bottom: 20px;
     width: auto;
@@ -853,6 +849,7 @@ nav a:hover{
 
 .hero-orange-left p {
     color: white;
+   box-sizing: content-box;
 }
 
 .hero-orange-left button {
@@ -883,15 +880,16 @@ nav a:hover{
    align-items: flex-end;
    margin: 0;
    padding: 0;
-    grid-column: 2 / span 2;
+    grid-column: 2 ;
 }
 
 .hero-orange-right img{
     width: 100%;  /* La imagen se adapta al ancho del contenedor */
-    height: 450px; /* Mantiene la proporción */
+   height: 450px;/* Mantiene la proporción */
     border-radius: 50px; /* Mantiene el borde redondeado */
     object-fit: cover; 
     border: 20px solid rgb(255, 255, 255,0.3);
+     box-sizing: content-box;
 }
 .hero-orange-right::before{
     position: absolute;
@@ -934,18 +932,131 @@ nav a:hover{
 }
 
 @media (max-width: 992px) {
+  
+    .header-container{
+        width: 100%;
+    }
 .hero-grid, .card {
 grid-template-columns: 1fr;
 text-align: center;
 }
-.tag { left: 50%; transform: translateX(-50%); }
+.tag { 
+    
+    bottom: 17%;
+}
+
+.hero-networks{
+    display: flex;
+    box-sizing: border-box;/* incluye padding dentro del 100% */
+    width: 100%;
+   position: relative;
+   padding:  60px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.hero-networks h3{
+    position: absolute;
+    top: 0%;
+    width: auto;
+   
+   
+}
+.btn-redes.cbs{
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+    
+}
+.btn-redes.cbs::after{
+    left: 100%;
+}
+.btn-redes.usa{
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+}
+.btn-redes.usa::after{
+    left: 100%;
+}
+.btn-redes.foxnews{
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+}
+.btn-redes.foxnews::after{
+    left: 100%;
+}
+.btn-redes.spotify{
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+}
+.btn-redes.spotify::after{
+    left: 100%;
+}
+.btn-redes.NBC{
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+}
+.btn-redes.NBC::after{
+    left: 100%;
+}
+.btn-redes.cbs::after{
+   font-size: 1em;
+   
+}
+.btn-redes.usa::after{
+   font-size: 1em;
+   line-height: 5px;
+}
+.btn-redes.foxnews::after{
+   font-size: 1em;
+}
+.btn-redes.spotify::after{
+   font-size: 1em;
+}
+.btn-redes.NBC::after{
+   font-size: 1em;
+}
+.hero-pinkcard-margin{
+    gap:50px
+}
+.hero-bluecard-margin{
+    gap:50px
+}
+.hero-orange-margin{
+    gap:50px
+}
+.globe-pink {
+    width: 250px;
+    height: auto;
+}
+
+.globe-blue {
+    width: 250px;
+    height: auto;
+}
+
+.globe-orange {
+    width: 250px;
+    height: auto;
+}
+
+.hero-left a {
+    position: static;  /* o bien position: relative; top: 0; right: 0; */
+    top: auto;
+    right: auto;
+  }
+
 }
 
 @media (max-width: 768px) {
     .hero{
         margin: 0;
         padding: 0;
-        width: 100vw;
+        width: 100%;
     }
 .header-container {
    
@@ -967,7 +1078,8 @@ justify-content: center;
 }
 .tag{
     position: absolute;
-    left: 30%;
+    left: 2%;
+    bottom: 2%;
 }
 
 .hero-networks{
@@ -976,6 +1088,7 @@ justify-content: center;
    padding: 60px;
     justify-content: center;
     align-items: center;
+     box-sizing: border-box;/* incluye padding dentro del 100% */
 }
 .hero-networks h3{
     position: absolute;
@@ -983,6 +1096,7 @@ justify-content: center;
     width: auto;
    
 }
+
 
 .btn-redes.cbs::after{
    font-size: 1em;

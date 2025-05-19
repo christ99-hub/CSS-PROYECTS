@@ -151,9 +151,8 @@ const handleCarrouselleft = ()=>{
                 <h1>Accessibility
                 </h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Repudiandae, nisi? Officia quae incidunt doloribus esse minus, 
-                    blanditiis eveniet explicabo facilis maxime rerum quibusdam quod aperiam fugit nulla,
-                     dolores consequatur culpa.</p>
+                    Repudiandae, nasdasdasdasdasdasdisi? Officia quae incidunt, 
+                    blanditiis eveniet explicabo facilis maxime rerum  culpa.</p>
                      <button>Read more</button>
             </div>
             <div className='hero-orange-right'>

@@ -10,19 +10,26 @@ export const HowWorks = () => {
         </div>
         <div className='HowWorks-imgs'>
             <div className='HowWorks-img1'>
-                 <img src="designs/libreta.jpg" alt="asdasd" />
+              <div className='firstcard'>
+                  <img src="designs/libreta.jpg" alt="asdasd" />
                  <h2>Writing</h2>
                  <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium illum, repr</span>
+              </div>
+                 
             </div>
             <div className='HowWorks-img2'>
+              <div className='secondcard'>
             <img src="designs/newspaper.jpg" alt="asdasd" />
             <h2>Publishing</h2>
             <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium illum, repr</span>
+            </div>
            </div>
             <div className='HowWorks-img3'>
+              <div className='thirdcard'>
             <img src="designs/exito.jpg" alt="asdasd" />
             <h2>Get Results</h2>
             <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium illum, repr</span>
+            </div>
             </div> 
             
         </div>
